@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'temurin'
-          cache: maven
+          distribution: 'adoptium'
+          cache: maven 
 
       # 3. Ejecutar los plugins
       - name: Build and Test
