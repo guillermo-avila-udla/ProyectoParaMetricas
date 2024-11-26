@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'adoptium'
+          distribution: 'temurin'
           cache: maven 
 
       # 3. Ejecutar los plugins
