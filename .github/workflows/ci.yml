@@ -18,11 +18,12 @@ jobs:
         uses: actions/checkout@v4 # Actualizado a la última versión
 
       # Paso 2: Configurar JDK
-      - name: Configurar JDK
-        uses: actions/setup-java@v4 # Actualizado a la última versión
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
         with:
-          distribution: 'adopt'
           java-version: '11'
+          distribution: 'temurin'
+          cache: maven
 
       # 3. Ejecutar los plugins
       - name: Build and Test
