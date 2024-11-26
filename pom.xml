@@ -23,6 +23,16 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version> <!-- Asegúrate de usar la última versión -->
+                <configuration>
+                    <source>11</source> <!-- Versión del lenguaje -->
+                    <target>11</target> <!-- Versión del bytecode -->
+                    <encoding>UTF-8</encoding> <!-- Configuración de codificación -->
+                </configuration>
+            </plugin>
             <!-- Plugin para ejecutar pruebas -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
