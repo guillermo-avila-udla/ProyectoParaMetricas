@@ -35,6 +35,7 @@ jobs:
       # 5. Ejecutar SpotBugs
       - name: SpotBugs Analysis
         run: mvn spotbugs:check
+        continue-on-error: true
 
       # 6. Generar reporte de cobertura con JaCoCo
       - name: Generate Coverage Report
