@@ -62,6 +62,7 @@
                 <version>3.2.0</version>
                 <configuration>
                     <configLocation>src/main/resources/sun_checks.xml</configLocation>
+                    <outputFile>target/checkstyle-result.xml</outputFile>
                 </configuration>
             </plugin>
 
@@ -78,9 +79,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <outputFormat>html</outputFormat>
-                    <outputDirectory>${project.build.directory}/spotbugs-html</outputDirectory>
-                </configuration>
+                    <outputXml>true</outputXml>
+                    <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
+                  </configuration>
             </plugin>
         </plugins>
     </build>
