@@ -42,3 +42,13 @@ jobs:
       # 6. Generar reporte de cobertura con JaCoCo
       - name: Generate Coverage Report
         run: mvn jacoco:report
+        
+      # Paso 7: Subir artefactos generados
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Maven-Reports
+          path: |
+            target/site/jacoco  # Reportes de cobertura JaCoCo
+            target/site/checkstyle  # Reportes de Checkstyle
+            target/spotbugsXml.xml  # Reportes XML de SpotBugs
