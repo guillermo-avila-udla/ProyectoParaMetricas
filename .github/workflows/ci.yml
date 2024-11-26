@@ -52,6 +52,6 @@ jobs:
         with:
           name: Maven-Reports
           path: |
-            target/site/jacoco/jacoco.xml  # Reportes de cobertura JaCoCo
-            target/checkstyle-result.xml  # Reportes XML de Checkstyle
-            target/spotbugsXml.xml  # Reportes XML de SpotBugs
+            target/site/jacoco/jacoco.xml
+            target/checkstyle-result.xml
+            target/spotbugsXml.xml
